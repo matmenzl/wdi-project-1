@@ -13,7 +13,15 @@ h1 {
   background-color: black;
 }
 
-.question1 {
+.start {
+  background-color:white;
+  margin: 0 auto;
+  width: 320px;
+  height: 200px;
+  border: solid 1px;
+}
+
+.user {
   background-color:red;
   margin: 0 auto;
   width: 320px;
@@ -21,7 +29,7 @@ h1 {
   border: solid 1px;
 }
 
-.question2 {
+.jon {
   background-color:grey;
   margin: 0 auto;
   width: 320px;
@@ -30,7 +38,7 @@ h1 {
 }
 
 
-.question3 {
+.result {
   background-color:indigo;
   margin: 0 auto;
   width: 320px;
@@ -38,7 +46,13 @@ h1 {
   border: solid 1px;
 }
 
-.result {
+#question {
+  text-align: center;
+  height: 100px;
+  margin: 10px;
+}
+
+.bumper {
   background-color:green;
   margin: 0 auto;
   width: 320px;
@@ -47,11 +61,44 @@ h1 {
 }
 
 
+#bumper {
+  text-align:center;
+}
 
-#question {
+#score {
+  width: 300px;
+  height: 30px;
   text-align: center;
-  height: 100px;
-  margin: 10px;
+}
+
+li#resultPlayer {
+  background-color: white;
+  width: 50%;
+  height: 60px;
+  float:left;
+  text-align: center;
+}
+
+li#resultJon {
+  background-color:beige;
+  width: 50%;
+  height: 60px;
+  float:left;
+  text-align: center;
+}
+
+#share {
+  width: 300px;
+  height: 20px;
+  float: left;
+  text-align: center;
+}
+
+#reminder {
+  width: 300px;
+  height: 20px;
+  float:left;
+  text-align: center;
 }
 
 button {
