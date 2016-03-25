@@ -7,6 +7,11 @@ h1 {
   text-align: center;
 }
 
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .slide {
   height: 40px;
   width: 40px;
@@ -17,8 +22,10 @@ h1 {
   background-color:white;
   margin: 0 auto;
   width: 320px;
-  height: 200px;
+  height: 300px;
   border: solid 1px;
+  text-align: center;
+  padding: 10px;
 }
 
 .user {
