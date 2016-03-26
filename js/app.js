@@ -35,7 +35,7 @@ $(function() {
 
       $( "#slider1" ).slider({
         step: 50,
-        min: 10,
+        min: 0,
         max: 5000,
         slide: function( event, ui ) {
 
@@ -54,8 +54,8 @@ $(function() {
       $('.jon').show();
       $( "#slider2" ).slider({
         step: 50,
-        value: 1000,
-        min: 10,
+        value: 500,
+        min: 0,
         max: 5000,
         disabled: true,
       });
@@ -73,7 +73,7 @@ $(function() {
       $( "#slider3" ).slider({
         step: 50,
         value: 500,
-        min: 10,
+        min: 0,
         max: 5000,
         disabled: true,
       });
@@ -92,10 +92,16 @@ $(function() {
         console.log(userValue1);
         console.log(jonValue1);
    
-        if ((resultValue1 - userValue1) < Math.pow(resultValue1 - jonValue1),2) {
+        if (Math.pow((resultValue1 - userValue1),2) < Math.pow((resultValue1 - jonValue1),2)) {
           userWins++;
           console.log(userWins);
           $('#userWins').html(userWins);
+
+        } else if (Math.pow((resultValue1 - userValue1),2) == Math.pow((resultValue1 - jonValue1),2)) {
+          userWins++
+          jonWins++
+          $('#userWins').html(userWins);
+          $('#jonWins').html(jonWins);
 
         } else {
           jonWins++;
