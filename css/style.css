@@ -1,5 +1,13 @@
-body {
-  background: white;
+.start {
+  background-image: url("../images/john_snow_start_1200.png");
+  max-width: 100%; 
+  background-size:cover;
+  height: 320px; 
+  background-position: center center;
+}
+
+body { 
+    margin: 0; 
 }
 
 header {
@@ -15,9 +23,10 @@ header {
   }
 }
 
-img {
-  display: block;
+.heroInfo {
+  padding-top: 9em;
 }
+
 
 .slide {
   height: 40px;
@@ -117,13 +126,26 @@ img {
   text-align: center;
 }
 
+
+
 button {
-  margin: 20px 100px 50px 120px;
-  list-style: none;
-  font-family: 'News Cycle', sans-serif;
-  font-size: 24px;
-  border-style: 1px solid black;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-style:none;
+  }
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
 }
+
 
 li {
   list-style: none;
