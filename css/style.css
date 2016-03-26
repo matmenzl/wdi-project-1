@@ -1,6 +1,6 @@
 .start {
   background-image: url("../images/john_snow_start_1200.png");
-  max-width: 100%; 
+  width: 100%; 
   background-size:cover;
   height: 320px; 
   background-position: center center;
