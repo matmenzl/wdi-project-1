@@ -34,9 +34,9 @@ $(function() {
 
 
       $( "#slider1" ).slider({
-        step: 50,
+        step: 1,
         min: 0,
-        max: 5000,
+        max: 80,
         slide: function( event, ui ) {
 
           userValue1 = $( "#slider1" ).slider("option", "value" );
@@ -52,11 +52,15 @@ $(function() {
       e.preventDefault()
       $('.user').hide();
       $('.jon').show();
+
+
+
+
       $( "#slider2" ).slider({
-        step: 50,
-        value: 500,
+        step: 1,
+        value: 40,
         min: 0,
-        max: 5000,
+        max: 100,
         disabled: true,
       });
       jonValue1 = $( "#slider2" ).slider("value" );
@@ -71,10 +75,10 @@ $(function() {
       $('.jon').hide();
 
       $( "#slider3" ).slider({
-        step: 50,
-        value: 500,
+        step: 1,
+        value: 44,
         min: 0,
-        max: 5000,
+        max: 100,
         disabled: true,
       });
       resultValue1 = $( "#slider3" ).slider("value" );
