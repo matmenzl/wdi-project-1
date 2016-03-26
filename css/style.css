@@ -78,7 +78,7 @@ img {
   text-align: center;
 }
 
-li#resultPlayer {
+.displayUserWins {
   background-color: white;
   width: 50%;
   height: 60px;
@@ -86,7 +86,7 @@ li#resultPlayer {
   text-align: center;
 }
 
-li#resultJon {
+.displayJonWins {
   background-color:beige;
   width: 50%;
   height: 60px;
