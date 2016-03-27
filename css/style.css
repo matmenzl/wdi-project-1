@@ -2,7 +2,7 @@
   background-image: url("../images/john_snow_start_1200.png");
   width: 100%; 
   background-size:cover;
-  height: 320px; 
+  height: 400px; 
   background-position: center center;
 }
 
@@ -165,6 +165,19 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+form input{
+  height: 45px;
+  width: 200px;
+  border: solid 1px grey;
+  margin: 0 0 10px 0;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 2;
 }
 
 /*slider-bar*/
