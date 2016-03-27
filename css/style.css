@@ -2,7 +2,7 @@
   background-image: url("../images/john_snow_start_1200.png");
   width: 100%; 
   background-size:cover;
-/*  background-position: center center;*/
+  background-position: center center;
   background-repeat: no-repeat;
   padding:350px 0 30px 0;
 }
@@ -28,11 +28,11 @@ header {
 }
 
 
-.slide {
+/*.slide {
   height: 40px;
   width: 40px;
   background-color: black;
-}
+}*/
 
 .start {
   background-color:#93b7bf;
@@ -193,7 +193,17 @@ input::-webkit-input-placeholder {
 .ui-slider-handle.ui-state-default.ui-corner-all {
 }
 
+@media only screen and (max-width: 640px) { /*if screen is higher than 640 these wont apply (styole for 640 down)*/
+  .start {
+    width: 100%;
+    background-image: url("../images/john_snow_start_1200.png");
+    background-position: left left;
+  }
 
+  header {
+    font-size: 30px;
 
+  }
 
+}
 
