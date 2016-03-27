@@ -169,14 +169,14 @@ footer p {
 
 /*slider-bar*/
 .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
-  margin: 10px;
+  margin: 0px 40px 20px 40px;
 }
 
 /*slider-square*/
 .ui-slider-handle.ui-state-default.ui-corner-all {
 }
 
-
+    
 
 
 
