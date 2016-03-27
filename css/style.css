@@ -3,7 +3,7 @@
   width: 100%; 
   background-size:cover;
   background-position: center center;
-  padding-top:350px;
+  padding:350px 0 30px 0;
 }
 
 body { 
@@ -49,6 +49,10 @@ header {
   font-family: 'News Cycle', sans-serif;
   font-size: 24px;
   font-weight: bold;
+}
+
+#more {
+  background-color:white;
 }
 
 .jon {
@@ -126,7 +130,6 @@ header {
 }
 
 
-
 button {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -138,6 +141,7 @@ button {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border-style:none;
+  margin-bottom:30px;
   }
 
 button:hover {
@@ -188,7 +192,7 @@ input::-webkit-input-placeholder {
 .ui-slider-handle.ui-state-default.ui-corner-all {
 }
 
-    
+
 
 
 
