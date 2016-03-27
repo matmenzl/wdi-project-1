@@ -2,7 +2,8 @@
   background-image: url("../images/john_snow_start_1200.png");
   width: 100%; 
   background-size:cover;
-  background-position: center center;
+/*  background-position: center center;*/
+  background-repeat: no-repeat;
   padding:350px 0 30px 0;
 }
 
@@ -14,7 +15,7 @@ header {
   background-color: #007abf;
   color: white;
   font-family: 'News Cycle', sans-serif;
-  width: 100%;  
+  width:100%;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
