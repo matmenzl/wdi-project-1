@@ -28,12 +28,6 @@ header {
 }
 
 
-/*.slide {
-  height: 40px;
-  width: 40px;
-  background-color: black;
-}*/
-
 .start {
   background-color:#93b7bf;
   margin: 0 auto;
@@ -43,6 +37,19 @@ header {
   font-weight: medium;
   color:rgba(0,0,0,0.8);
   line-height: 1em;
+}
+
+#user {
+  padding-bottom:40px;
+}
+
+#jon {
+  padding-bottom:40px;
+}
+
+#result {
+  padding-bottom:40px;
+
 }
 
 .user {
@@ -199,11 +206,25 @@ input::-webkit-input-placeholder {
   margin: 0px 40px 20px 40px;
 }
 
-/*slider-square*/
+
+/*slider-handle*/
 .ui-slider-handle.ui-state-default.ui-corner-all {
+    width: 2.1em;
+    height: 2.1em;
+    background: #007abf;
+    border: 1px solid #fff;
+
 }
 
-@media only screen and (max-width: 640px) { /*if screen is higher than 640 these wont apply (styole for 640 down)*/
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.7em;
+  margin-left: -.6em;
+}
+
+
+
+
+@media only screen and (max-width: 640px) { /*if screen is higher than 640 these wont apply (style for 640 down)*/
   .start {
     width: 100%;
     background-image: url("../images/john_snow_start_1200.png");
