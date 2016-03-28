@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./jquery-ui-1.11.4.custom/jquery-ui.min.css">
   <script src="./jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
   <script src="./jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
@@ -29,56 +29,53 @@
       </div>
     </div>
 
-    <div class="user" id="slider">
-      <li id="user">Batman v Superman: Dawn of Justice premiered last week starring Ben Affleck as Batman. How old is Ben Affleck?<br><span id="#slider_value_user">0</span></li>
-      <div id="slider1"></div>
+    <div class="user">
+      <div id="user"></div>
+      <div id="slider_value_user">0</div>
+      <div class="slider"></div>
       <button type="submit" id="showJon1">Submit your answer</button>
-      <div id="more"><a href="https://de.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice">Read More</a> about "Batman v Superman" or watch the Trailer.<br>
+      <!-- <div id="more"><a href="https://de.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice">Read More</a> about "Batman v Superman" or watch the Trailer.<br>
         <div class=".embed-container">
           <iframe src="https://www.youtube.com/embed/NhWg7AQLI_8?autoplay=0" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
+      </div> -->
     </div>
-  </div>
 
-  <div class="jon" id="slider">
-    <li id="jon">John thinks that Ben Affleck is<br><span id="#slider_value_jon">0</span> years old.</li>
-    <li id="slider2"></li>
-    <button type="submit" id="showResult1">Get the News right</button>
-  </div>
+    <div class="jon">
+      <div id="jon">John thinks the answer is...</div>
+      <div id="slider_value_jon">0</div>
+      <!-- <li id="slider2"></li> -->
+      <button type="submit" id="showResult1">Get the News right</button>
+    </div>
 
-  <div class="result" id="slider">
-    <li id="result">Ben Affleck is<br><span id="#slider_value_result"></span>years old.</li>
-    <li id="slider3"></li>
-    <li id="#"></li>
-    <button type="submit" id="showQuestion2">Next Round</button>
-  </div>
-
-
-  <div class="bumper" id="#">
-    <div id="bumper">No more News for Today</div>
-    <div id="score"></div>
-    <li class="displayUserWins">You <br><span id="userWins">0</span></li>
-    <li class="displayJonWins">John <br><span id="jonWins">0</span></li>
-    <li>Get a text from John when he wants to play again:</li>
-    <li>
-      <form id="email-form" action="" method="POST" target="no-target">
-        <input id="email" type="tel" name="usrtel" placeholder="Your Mobile Number">
-        <button id="email-submit" type="submit">Send</button>
-        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden;display:none"></iframe> 
-      </form>
-    </li>
-    <!-- <button type="submit" id="round2">Next round</button> -->
-  </div>
+    <div class="result">
+      <div id="result">The answer is <span id="answer"></span></div>
+<!--       <li id="slider3"></li>
+      <li id="#"></li> -->
+      <button type="submit" id="showQuestion2">Next Round</button>
+    </div>
 
 
+    <div class="bumper" id="#">
+      <div id="bumper">No more News for Today</div>
+      <div id="score"></div>
+      <li class="displayUserWins">You <br><span id="userWins">0</span></li>
+      <li class="displayJonWins">John <br><span id="jonWins">0</span></li>
+      <li>Get a text from John when he wants to play again:</li>
+      <li>
+        <form id="email-form" action="" method="POST" target="no-target">
+          <input id="email" type="tel" name="usrtel" placeholder="Your Mobile Number">
+          <button id="email-submit" type="submit">Send</button>
+          <iframe src="#" id="no-target" name="no-target" style="visibility:hidden;display:none"></iframe> 
+        </form>
+      </li>
+      <!-- <button type="submit" id="round2">Next round</button> -->
+    </div>
 
-</div><!-- .main -->
+  </div><!-- .main -->
 
-<footer>
-  <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and <i class="fa fa-headphones"></i></p>
-</footer>
-
-
+  <footer>
+    <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and <i class="fa fa-headphones"></i></p>
+  </footer>
 </body>
 </html>

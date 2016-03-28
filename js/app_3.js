@@ -1,158 +1,141 @@
 
-//get value of slider set
-//store values of slider in a variable based on button click
-//define jons value of slider and show it on page.
-//define result value of slider and show it on page.
-//check which answer is closer to the final result
-//check var userValue1 and var jonValue1 and what is closer to var resultValue
-//loop for second round ??
+$(beginGame);
 
+var userValue1;   // user's guess value
+var jonValue1;    // answer value
+var resultValue1; // correct answer 
+var userWins = 0;
+var jonWins  = 0;
 
-$(function() {
+var questions = [
+  {
+    question: "Batman v Superman: Dawn of Justice premiered last week starring Ben Affleck as Batman. How old is Ben Affleck?",
+    jon: "40",
+    answer: "44"
+  }, {
+    question: "What is the answer?",
+    jon: "41",
+    answer: "42"
+  }, {
+    question: "How much does Jon Snow Know?",
+    jon: "12",
+    answer: "0"
+  }
+]
+var rounds = 0;
 
-  var userValue1;
-  var jonValue1;
-  var resultValue1;
-  var jonWins = 0;
-  var userWins = 0;
+function beginGame(){
+  $('.start').show();
 
+  // Hide all other sections at the start
+  $('.user').hide();
+  $('.jon').hide();
+  $('.result').hide();
+  $('.bumper').hide();
 
-  $(function start () {
-    $('.start').show();
-    $('.user').hide();
-    $('.jon').hide();
-    $('.result').hide();
-    $('.bumper').hide();
+  // Setup slider
+  initSlider();
+
+  // Setup events
+  $('#showUser1').click(playRound);
+  $('#showJon1').click(showJon);
+  $('#showResult1').click(showResult);
+  $('#showQuestion2').click(bumper);
+  $('#email-form').one('submit', emailSignup);
+}
+
+function initSlider() {
+  $(".slider").slider({
+    step: 1,
+    min: 0,
+    max: 80,
+    slide: function(event, ui) {
+      userValue1 = $(event.target).slider("option", "value");
+      $('#slider_value_user').text(userValue1);
+    }
   });
+}
 
+function playRound(){
+  $('.user').show();
 
-  $(function showUser() {
-    $('#showUser1').click(function(e) {
-      e.preventDefault()
-      $('.user').show();
-      $('.start').hide();
-      $('.ui-slider-handle').draggable();
+  $('.start').hide();
+  $('.jon').hide();
+  $('.result').hide();
+  $('.bumper').hide();
 
+  // Reset sliders text
+  $('#slider_value_user').text("0")
 
-      $( "#slider1" ).slider({
-        step: 1,
-        min: 0,
-        max: 80,
-        slide: function( event, ui ) {
-          // $('.ui-slider-handle').draggable();
-          userValue1 = $( "#slider1" ).slider("option", "value" );
-          document.getElementById('#slider_value_user').innerHTML = userValue1;
+  // Update question
+  $('#user').html(questions[rounds].question);
+  $('#slider_value_jon').html(questions[rounds].jon);
+  $('#answer').html(questions[rounds].answer);
+}
 
-        }
-      });
+function showJon(e) {
+  e.preventDefault()
+  $('.user').hide();
+  $('.jon').show();
+}
+
+function showResult(e) {
+  e.preventDefault()
+  $('.result').show();
+  $('.jon').hide();
+}
+
+function bumper(e) {
+  e.preventDefault()
+
+  if (Math.pow((resultValue1 - userValue1),2) < Math.pow((resultValue1 - jonValue1),2)) {
+    userWins++;
+    $('#userWins').html(userWins);
+  } else if (Math.pow((resultValue1 - userValue1),2) == Math.pow((resultValue1 - jonValue1),2)) {
+    userWins++
+    jonWins++
+    $('#userWins').html(userWins);
+    $('#jonWins').html(jonWins);
+  } else {
+    jonWins++;
+    console.log(jonWins);
+    $('#jonWins').html(jonWins);
+  }
+
+  rounds++;
+
+  if (questions.length !== rounds) {
+
+    userValue1   = undefined; // user's guess value
+    jonValue1    = undefined; // answer value
+    resultValue1 = undefined; // correct answer 
+
+    // Reset Slider values
+    $('.slider').each(function(){
+      $(this).slider('value', 0);
     });
-  });
 
-  $(function showJon() {
-    $('#showJon1').click(function(e) {
-      e.preventDefault()
-      $('.user').hide();
-      $('.jon').show();
+    return playRound();
+  }
 
-      $( "#slider2" ).slider({
-        step: 1,
-        value: 40,
-        min: 0,
-        max: 100,
-        disabled: true,
-      });
-      jonValue1 = $( "#slider2" ).slider("value" );
-      document.getElementById('#slider_value_jon').innerHTML = jonValue1;
-    });
-  });
+  $('.bumper').show();
+  $('.result').hide();
+}
 
-  $(function showResult() {
-    $('#showResult1').click(function(e) {
-      e.preventDefault()
-      $('.result').show();
-      $('.jon').hide();
-
-      $( "#slider3" ).slider({
-        step: 1,
-        value: 44,
-        min: 0,
-        max: 100,
-        disabled: true,
-      });
-      resultValue1 = $( "#slider3" ).slider("value" );
-      document.getElementById('#slider_value_result').innerHTML = resultValue1;
-
-    });
-  });
-
-  $(function bumper() {
-    $('#showQuestion2').click(function(e) {
-      e.preventDefault()
-      $('.bumper').show();
-      $('.result').hide();
-        console.log(resultValue1);
-        console.log(userValue1);
-        console.log(jonValue1);
-   
-        if (Math.pow((resultValue1 - userValue1),2) < Math.pow((resultValue1 - jonValue1),2)) {
-          userWins++;
-          console.log(userWins);
-          $('#userWins').html(userWins);
-
-        } else if (Math.pow((resultValue1 - userValue1),2) == Math.pow((resultValue1 - jonValue1),2)) {
-          userWins++
-          jonWins++
-          $('#userWins').html(userWins);
-          $('#jonWins').html(jonWins);
-
-        } else {
-          jonWins++;
-          console.log(jonWins);
-          $('#jonWins').html(jonWins);
-
-        };
-      
-
-
-    });
-  });
-
-
-  $('#email-form').one('submit',function(){
+function emailSignup(){
   var emailAddress = encodeURIComponent($('#email').val());
   var baseURL = 'https://docs.google.com/forms/d/1warZS731hYg-8hsnzHWc8IS47GYvWGrIB36brVGCtHM/formResponse?entry.1693324356=';
   var submitRef = '&submit=submit';
   var submitURL = (baseURL + emailAddress + submitRef);
+  
   $(this)[0].action=submitURL;
+  
   $('#email').addClass('active').val('Thank You!');
+  
   setTimeout(function(){
     $('#form-container').hide();
     $('#update-form').animate({'width': '0px'},300,function(){
       $('#get-updates-link').hide();
     });
   },1000);
-
-
-
-});
-
-
-
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+}
