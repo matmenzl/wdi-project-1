@@ -31,6 +31,7 @@ $(function() {
       e.preventDefault()
       $('.user').show();
       $('.start').hide();
+      $('.ui-slider-handle').draggable();
 
 
       $( "#slider1" ).slider({
@@ -38,7 +39,7 @@ $(function() {
         min: 0,
         max: 80,
         slide: function( event, ui ) {
-          $('.ui-slider-handle').draggable();
+          // $('.ui-slider-handle').draggable();
           userValue1 = $( "#slider1" ).slider("option", "value" );
           document.getElementById('#slider_value_user').innerHTML = userValue1;
 
