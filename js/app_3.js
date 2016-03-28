@@ -13,13 +13,21 @@ var questions = [
     jon: "40",
     answer: "44"
   }, {
-    question: "What is the answer?",
-    jon: "41",
-    answer: "42"
+    question: "One week ago, footballer Johan Cruyff passed away. Which back number did Cruyff wear while he was playing?",
+    jon: "23",
+    answer: "14"
   }, {
-    question: "How much does Jon Snow Know?",
-    jon: "12",
-    answer: "0"
+    question: "How many people in Britain drink alcohol at least once per week? (in Million)",
+    jon: "20",
+    answer: "28.9"
+  }, {
+    question: "The most famous baby-name last year was Oliver. Do you know how many Olivers were born in 2014? (in Thousands)",
+    jon: "1",
+    answer: "7"
+  }, {
+    question: "Storm Katie has battered large parts of England, leaving flights cancelled, property damaged and thousands of people without power. How many homes were temporarily without power? (in Thousand)",
+    jon: "100",
+    answer: "200"
   }
 ]
 var rounds = 0;
@@ -50,7 +58,7 @@ function initSlider() {
   $(".slider").slider({
     step: 1,
     min: 0,
-    max: 80,
+    max: 200,
     slide: function(event, ui) {
       userValue1 = $(event.target).slider("option", "value");
       $('#slider_value_user').text(userValue1);
@@ -68,6 +76,10 @@ function playRound(){
 
   // Reset sliders text
   $('#slider_value_user').text("0")
+
+  //update jonValue and resultValue
+  jonValue1 = 
+  resultValue1 = 
 
   // Update question
   $('#user').html(questions[rounds].question);
@@ -89,6 +101,8 @@ function showResult(e) {
 
 function bumper(e) {
   e.preventDefault()
+  var resultValue1 = questions[rounds].answer;
+  var jonValue1 = questions[rounds].jon;
 
   if (Math.pow((resultValue1 - userValue1),2) < Math.pow((resultValue1 - jonValue1),2)) {
     userWins++;

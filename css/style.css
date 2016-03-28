@@ -26,6 +26,9 @@ body {
   font-weight: medium;
   color:rgba(0,0,0,0.8);
   line-height: 1em;
+  min-height:100%;
+  padding-bottom: 20px;
+
 }
 
 header {
@@ -39,10 +42,10 @@ header {
   font-size: 24px;
   font-weight:bold;
 }
-
+/*
 .heroInfo {
   padding-top: 9em; 
-}
+}*/
 
 #user {
   padding:40px;
@@ -76,6 +79,9 @@ header {
   font-size: 24px;
   font-weight: lighter;
   color:white;
+  min-height:100%;
+  padding-bottom: 20px;
+
 }
 
 #more {
@@ -91,6 +97,8 @@ header {
   font-size: 24px;
   font-weight: lighter;
   color:white;
+  height:100%;
+  padding-bottom: 20px;
 }
 
 .result {
@@ -101,6 +109,8 @@ header {
   font-size: 24px;
   font-weight: lighter;
   color:white;
+  padding-bottom: 20px;
+
 }
 
 .bumper {
@@ -111,10 +121,13 @@ header {
   font-size: 24px;
   font-weight: medium;
   color:white;
+  padding-bottom: 20px;
+
 }
 
 #bumper {
   text-align:center;
+  padding:20px;
 }
 
 #score {
@@ -129,18 +142,20 @@ header {
   width: 50%;
   float:left;
   text-align: center;
-  color:black;
+  color: #007abf;
+  font-weight: bold;
 }
 
 .displayJonWins {
-  background-color:beige;
+  background-color:white;
   width: 50%;
   float:left;
   text-align: center;
-  color:black;
+  color: #007abf;
+  font-weight: bold;
 }
 
-#share {
+/*#share {
   width: 300px;
   height: 20px;
   float: left;
@@ -153,6 +168,10 @@ header {
   height: 20px;
   float:left;
   text-align: center;
+}*/
+
+#text {
+  padding-top: 150px;
 }
 
 button {
@@ -166,7 +185,6 @@ button {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border-style:none;
-  margin-bottom: 30%;
 }
 
 button:hover {
@@ -200,7 +218,7 @@ form input{
   height: 45px;
   width: 200px;
   border: solid 1px grey;
-  margin: 0 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 
 input,
@@ -243,11 +261,11 @@ input::-webkit-input-placeholder {
   height: 100%; 
 }
 
-
-@media only screen and (max-width: 640px) { /*if screen is higher than 640 these wont apply (style for 640 down)*/
+/*
+@media only screen and (max-width: 640px) { if screen is higher than 640 these wont apply (style for 640 down)
 
 
   header {
     font-size: 30px;
   }
-}
+}*/
