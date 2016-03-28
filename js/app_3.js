@@ -34,6 +34,7 @@ function beginGame(){
   $('.bumper').hide();
 
   // Setup slider
+  $('.ui-slider-handle').draggable();
   initSlider();
 
   // Setup events
