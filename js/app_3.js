@@ -45,6 +45,7 @@ function beginGame(){
 }
 
 function initSlider() {
+  $('.ui-slider-handle').draggable();
   $(".slider").slider({
     step: 1,
     min: 0,
