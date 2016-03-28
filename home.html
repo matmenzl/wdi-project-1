@@ -78,9 +78,10 @@
       <li class="displayJonWins">Jon <br><span id="jonWins">0</span></li>
       <li>Would you like a ping from John when he wants to play again? No Problem, just leave your number:</li>
       <li>
-      <form action="#">
-        <input type="tel" name="usrtel" placeholder="Your Mobile Number">
-        <button type="submit">Send</button>
+      <form id="email-form" action="" method="POST" target="no-target">
+        <input id="email" type="tel" name="usrtel" placeholder="Your Mobile Number">
+        <button id="email-submit" type="submit">Send</button>
+        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden;display:none"></iframe> 
       </form>
       </li>
       <!-- <button type="submit" id="round2">Next round</button> -->

@@ -118,7 +118,41 @@ $(function() {
   });
 
 
+  $('#email-form').one('submit',function(){
+  var emailAddress = encodeURIComponent($('#email').val());
+  var baseURL = 'https://docs.google.com/forms/d/1warZS731hYg-8hsnzHWc8IS47GYvWGrIB36brVGCtHM/formResponse?entry.1693324356=';
+  var submitRef = '&submit=submit';
+  var submitURL = (baseURL + emailAddress + submitRef);
+  $(this)[0].action=submitURL;
+  $('#email').addClass('active').val('Thank You!');
+  setTimeout(function(){
+    $('#form-container').hide();
+    $('#update-form').animate({'width': '0px'},300,function(){
+      $('#get-updates-link').hide();
+    });
+  },1000);
 
 
 
 });
+
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
