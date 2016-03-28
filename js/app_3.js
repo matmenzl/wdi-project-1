@@ -1,5 +1,11 @@
 
-
+//get value of slider set
+//store values of slider in a variable based on button click
+//define jons value of slider and show it on page.
+//define result value of slider and show it on page.
+//check which answer is closer to the final result
+//check var userValue1 and var jonValue1 and what is closer to var resultValue
+//loop for second round ??
 
 
 $(function() {
@@ -20,38 +26,6 @@ $(function() {
   });
 
 
-
-//show question 1 with slider 
-//1. create more turns consisting of three different views showUser, showJon and showResult 
-//2. html content of different turns should be defined in js
-//3. user-input and slider-content should be dynamic in each view
-  //make slider-input for user dynamic and store each user input for score-view later in an array 
-  //make slider for jon dynamic and store each value for score-view later in an array
-  //make slider for correct answer dynamic (and store each value for score-view later in an array
-//4. get values and compare them for final score-view
-
-//extra
-//make jon a bot with math.random-answers
-//
-
-
-
-$(user).each (function () {
-
-  var $question = user[i].text;
-  var $slider = user[i].slider;
-  var $info = user[i].info;
-  var $button = user[i].button;
-
-  $('.user').append('<li id="user">' + $user[i].text + '</li>' + $user[i].slider +<'div id="slider"</div>';
-  i++
-})
-
-
-
-
-
-
   $(function showUser() {
     $('#showUser1').click(function(e) {
       e.preventDefault()
@@ -65,6 +39,7 @@ $(user).each (function () {
         min: 0,
         max: 80,
         slide: function( event, ui ) {
+          // $('.ui-slider-handle').draggable();
           userValue1 = $( "#slider1" ).slider("option", "value" );
           document.getElementById('#slider_value_user').innerHTML = userValue1;
 
@@ -72,9 +47,6 @@ $(user).each (function () {
       });
     });
   });
-
-
-//show johns answer with johns slider for question 1
 
   $(function showJon() {
     $('#showJon1').click(function(e) {
@@ -93,8 +65,6 @@ $(user).each (function () {
       document.getElementById('#slider_value_jon').innerHTML = jonValue1;
     });
   });
-
-  //show correct answer for question 1 with corresponding slider-value
 
   $(function showResult() {
     $('#showResult1').click(function(e) {
@@ -115,16 +85,6 @@ $(user).each (function () {
     });
   });
 
-  //next turn 2
-
-  //show question 2 with slider 2
-  //show jons answer to question 2 with corresponding slider
-  //show 
-
-
-
-
-  //score-board
   $(function bumper() {
     $('#showQuestion2').click(function(e) {
       e.preventDefault()
@@ -164,7 +124,7 @@ $(user).each (function () {
   var submitRef = '&submit=submit';
   var submitURL = (baseURL + emailAddress + submitRef);
   $(this)[0].action=submitURL;
-  $('#email').addClass('active').val('Cu later!');
+  $('#email').addClass('active').val('Thank You!');
   setTimeout(function(){
     $('#form-container').hide();
     $('#update-form').animate({'width': '0px'},300,function(){
