@@ -1,22 +1,31 @@
+  html {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+body {
+  margin:0;
+}
+
+.main {
+  height:100%;
+}
+
 .start {
   background-image: url("../images/john_snow_start_1200.png");
-  width: 100%; 
-  margin: 0 auto;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding:350px 0 30px 0;
+  margin: 0 auto;
+  padding:350px 0 0 0;
   text-align: center;
   font-family: 'News Cycle', sans-serif;
   font-size: 42px;
   font-weight: medium;
   color:rgba(0,0,0,0.8);
   line-height: 1em;
-}
-
-body { 
-  margin: 0 auto;
-  width:100%;
 }
 
 header {
@@ -36,15 +45,27 @@ header {
 }
 
 #user {
-  padding-bottom:40px;
+  padding:40px;
 }
 
 #jon {
-  padding-bottom:40px;
+  padding:40px;
 }
 
 #result {
-  padding-bottom:40px;
+  padding:40px;
+}
+
+#slider_value_user {
+  padding:30px;
+}
+
+#slider_value_jon {
+  padding:30px;
+}
+
+#slider_value_result {
+  padding:30px;
 }
 
 .user {
@@ -80,12 +101,6 @@ header {
   font-size: 24px;
   font-weight: lighter;
   color:white;
-}
-
-#question {
-  text-align: center;
-  height: 100px;
-  margin: 10px;
 }
 
 .bumper {
@@ -151,7 +166,7 @@ button {
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border-style:none;
-  margin-bottom:30px;
+  margin-bottom: 30%;
 }
 
 button:hover {
@@ -173,6 +188,8 @@ footer {
   text-align: center;
   font-size: 14px;
   font-weight:bold;
+/*  position:fixed;
+  bottom:0;*/
 }
 
 footer p {
@@ -226,11 +243,9 @@ input::-webkit-input-placeholder {
   height: 100%; 
 }
 
+
 @media only screen and (max-width: 640px) { /*if screen is higher than 640 these wont apply (style for 640 down)*/
-  .start {
-    width: 100%;
-    background-image: url("../images/john_snow_start_1200.png");
-  }
+
 
   header {
     font-size: 30px;
