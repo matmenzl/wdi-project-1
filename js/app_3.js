@@ -163,3 +163,7 @@ function emailSignup(){
     });
   },1000);
 }
+
+function about() {
+  $('body').css('background', 'none');
+};
