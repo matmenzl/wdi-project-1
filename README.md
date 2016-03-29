@@ -3,19 +3,19 @@
 
 # About
 
-'Know The News' is a trivia news game totally focused on numbers and statistics. Users opponent ist famous News Anchorman Jon Snow. He knows almost everything. Not to be mistaken with actor John Snow, who as everybody knows, knows nothing.  
+'Know The News' is a mobile first trivia news game focused on numbers and statistics. Your opponent is famous News Anchorman Jon Snow. He knows almost everything. Not to be mistaken with actor Jon Snow, who, as everybody knows, knows nothing.  
 
-'Know The News' was build as a first coding project during my Web Development Immersive at General Assembly London.
+'Know The News' was build as a first coding project during Web Development Immersive at General Assembly London.
 
 ### How to play
 
-You answer trivia questions and play against Jon Snow, who knows almost everyhting. 
+You answer trivia questions and play against Jon Snow, who knows almost everyhting. Jon is very busy and has only a basic news set to play per day. The News you need to know about. If Jon has more News you get notified by text. 
 
 ### The Project requirements
 
 Display a game in the browser
 Game should be responsive
-Game should offer different turns
+Game should offer different turns 
 
 ### Technologies
 
