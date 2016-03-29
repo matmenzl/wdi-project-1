@@ -30,8 +30,9 @@ You answer trivia questions and play against Jon Snow, who knows almost everyhti
 ###Credits
 
 + 'Know The News" by Mathias Menzl 
-+ Kindly supported from GA Teachers Alex, Caroline and Oli
-*Jon Snow Image courtesy of Channel 4 News
++ 'Know The News' wouldn't have been possible without the vast coding knowledge of GA Teachers Alex, Caroline and Oli
++ Jon Snow Image courtesy of Channel 4 News
++ Any ressources used were either created by hand or are free of right and duly credited
 
-####Any ressources used were either created by hand or are free of right and duly credited.
+Feel free to comment and fork.
 
