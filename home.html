@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+  <meta name="viewport" CONTENT="width=device-width, initial-scale=1, user-scalable=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -20,14 +20,18 @@
 <body>
   <header>
     <a href="./home.html">Know The News</a>
+    <a href="./about.html"<i class="fa fa-info-circle" {float:"right";}></i></a>
   </header>
   <div class="main">
     <div class="start">
       <div class"heroInfo">
-        <li id="opener">Are you smarter than <br>John Snow?</li>
+        <li id="opener">Are you smarter than <br>Jon Snow?</li>
       </div>
       <div>
         <button type="submit" id="showUser1">Take The Challenge</button>
+      </div>
+      <div style="display:none">
+      <embed src="song.mp3" autostart=true loop=false controls="false">
       </div>
     </div>
 
@@ -36,40 +40,40 @@
       <div id="slider_value_user">0</div>
       <div class="slider"></div>
       <button type="submit" id="showJon1">Submit your answer</button>
-      </div>
     </div>
 
-    <div class="jon">
-      <div id="jon">John thinks the answer is...</div>
-      <div id="slider_value_jon">0</div>
-      <!-- <li id="slider2"></li> -->
-      <button type="submit" id="showResult1">Get the News right</button>
-    </div>
-
-    <div class="result">
-      <div id="result">The answer is <br><span id="answer"></span></div>
-<!--       <li id="slider3"></li>
-  <li id="#"></li> -->
-  <button type="submit" id="showQuestion2">Next Round</button>
-  <div id="more">
-  <h1>Get the News on BBC</h1>
+  <div class="jon">
+    <div id="jon">John thinks the answer is...</div>
+    <div id="slider_value_jon">0</div>
+    <!-- <li id="slider2"></li> -->
+    <button type="submit" id="showResult1">Get the News right</button>
   </div>
 
-</div>
+  <div class="result">
+    <div id="result">The answer is <br><span id="answer"></span>
+
+    </div>
+    <button type="submit" id="showQuestion2">Next Round</button>
+
+    <div id="more">
+      <h1>Get the News on BBC</h1>
+    </div>
+
+  </div>
 
 
-<div class="bumper" id="#">
-  <div id="bumper">No more News for Today</div>
-  <div class="displayUserWins">You <br><span id="userWins">0</span></div>
-  <div class="displayJonWins">John <br><span id="jonWins">0</span></div>
-  <div id="text">Get a text from John when he wants to play again:</div>
-  <form id="email-form" action="" method="POST" target="no-target">
-    <input id="email" type="tel" name="usrtel" placeholder="Your Mobile Number">
-    <button id="email-submit" type="submit">Send</button>
-    <iframe src="#" id="no-target" name="no-target" style="visibility:hidden;display:none"></iframe> 
-  </form>
-  <!-- <button type="submit" id="round2">Next round</button> -->
-</div>
+  <div class="bumper" id="#">
+    <div id="bumper">No more News for Today</div>
+    <div class="displayUserWins">You <br><span id="userWins">0</span></div>
+    <div class="displayJonWins">John <br><span id="jonWins">0</span></div>
+    <div id="text">Get a text from John when he wants to play again:</div>
+    <form id="email-form" action="" method="POST" target="no-target">
+      <input id="email" type="tel" name="usrtel" placeholder="Your Mobile Number">
+      <button id="email-submit" type="submit">Send</button>
+      <iframe src="#" id="no-target" name="no-target" style="visibility:hidden;display:none"></iframe> 
+    </form>
+  </div>
+
 
 
 </div><!-- .main -->
