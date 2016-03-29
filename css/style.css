@@ -1,7 +1,7 @@
-  html {
-  min-height: 100%;
-  height: auto !important;
+html {
   height: 100%;
+/*  height: auto !important;
+*/  height: 100%;
   margin: 0 auto -4em;
 }
 
@@ -9,8 +9,13 @@ body {
   margin:0;
 }
 
-.main {
+/*.main {
   height:100%;
+}*/
+
+header a {
+  color:white;
+  text-decoration: none;
 }
 
 .start {
@@ -28,6 +33,7 @@ body {
   line-height: 1em;
   min-height:100%;
   padding-bottom: 20px;
+  text-shadow:  2px 2px #fffd;
 
 }
 
@@ -60,15 +66,24 @@ header {
 }
 
 #slider_value_user {
-  padding:30px;
+  padding:0 30px 30px 30px;
+  font-size: 42px;
 }
 
 #slider_value_jon {
-  padding:30px;
+  padding:0 30px 30px 30px;
+  font-size: 42px;
 }
 
 #slider_value_result {
-  padding:30px;
+  padding:0 30px 30px 30px;
+  font-size: 42px;
+}
+
+#answer {
+  font-size: 42px;
+  padding:0 30px 30px 30px;
+
 }
 
 .user {
@@ -84,9 +99,16 @@ header {
 
 }
 
-#more {
+#more  {
   background-color:white;
   color:black;
+  text-decoration: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .jon {
@@ -155,20 +177,6 @@ header {
   font-weight: bold;
 }
 
-/*#share {
-  width: 300px;
-  height: 20px;
-  float: left;
-  text-align: center;
-  background-color:red;
-}
-
-#reminder {
-  width: 300px;
-  height: 20px;
-  float:left;
-  text-align: center;
-}*/
 
 #text {
   padding-top: 150px;
@@ -206,8 +214,8 @@ footer {
   text-align: center;
   font-size: 14px;
   font-weight:bold;
-/*  position:fixed;
-  bottom:0;*/
+  position:fixed;
+  bottom:0;
 }
 
 footer p {

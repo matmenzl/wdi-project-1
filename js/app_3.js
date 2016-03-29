@@ -11,24 +11,29 @@ var questions = [
   {
     question: "Batman v Superman: Dawn of Justice premiered last week starring Ben Affleck as Batman. How old is Ben Affleck?",
     jon: "40",
-    answer: "44"
+    answer: "44",
+    more: '<i class="fa fa-external-link"></i>' + ' ' + "<a href='http://www.bbc.co.uk/iplayer/episode/b0759g2t/the-film-review-zootropolis-the-club-batman-v-superman target='_blank''>Movie-Review on BBC </a>"
   }, {
     question: "One week ago, footballer Johan Cruyff passed away. Which back number did Cruyff wear while he was playing?",
     jon: "23",
-    answer: "14"
+    answer: "14",
+    more: "<i class='fa fa-external-link'></i>" + "<a href='http://www.bbc.co.uk/sport/football/35893452' target='_blank'>Johan Cruyff: Why does Netherlands Great matter?</a>"
   }, {
     question: "How many people in Britain drink alcohol at least once per week? (in Million)",
     jon: "20",
-    answer: "28.9"
+    answer: "28.9",
+    more: "<i class='fa fa-external-link'></i>" + "<a href=''http://www.bbc.com/future/story/20151102-why-do-the-british-drink-so-much' target='_blank''>Why do the british drink so much?</a>"
   }, {
-    question: "The most famous baby-name last year was Oliver. Do you know how many Olivers were born in 2014? (in Thousands)",
+    question: "The most popular baby-name last year was Oliver. Do you know how many Olivers were born in 2014? (in Thousands)",
     jon: "1",
-    answer: "7"
+    answer: "7",
+    more: "<i class='fa fa-external-link'></i>" + "<a href='http://www.bbc.co.uk/news/uk-33959140' target='_blank'>Baby names: Amelia and Oliver top England and Wales list</a>" 
   }, {
     question: "Storm Katie has battered large parts of England, leaving flights cancelled, property damaged and thousands of people without power. How many homes were temporarily without power? (in Thousand)",
     jon: "100",
-    answer: "200"
-  }
+    answer: "200",
+    more: "<i class='fa fa-external-link'></i>" + "<a href='http://www.bbc.co.uk/news/in-pictures-35910151' target='_blank'>Your pictures: Storm Katie destruction across the UK</a>"
+  },
 ]
 var rounds = 0;
 
@@ -77,14 +82,12 @@ function playRound(){
   // Reset sliders text
   $('#slider_value_user').text("0")
 
-  //update jonValue and resultValue
-  jonValue1 = 
-  resultValue1 = 
 
   // Update question
   $('#user').html(questions[rounds].question);
   $('#slider_value_jon').html(questions[rounds].jon);
   $('#answer').html(questions[rounds].answer);
+  $('#more').html(questions[rounds].more);
 }
 
 function showJon(e) {
