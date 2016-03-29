@@ -1,7 +1,5 @@
-<p align="center">
-  <img src="./readme.png" width="350"/>
-</p>
 
+![alt text](images/readme.png "Know The News")
 
 # About
 
