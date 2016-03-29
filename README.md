@@ -21,15 +21,17 @@ Game should offer different turns
 
 Double Hexagon is build with HTML/CSS and JavaScript with the following librairies:
 
-jQuery
-jQuery UI
-jQuery UI Touch
-Font Awesome
+*jQuery
+*jQuery UI
+*jQuery UI Touch
+*Font Awesome
 
-### Any ressources used were either created by hand or are free of right and duly credited.
 
 ###Credits
 
-'Know The News" by Mathias Menzl 
-Kindly supported from GA Teachers Alex, Caroline and Oli
-Jon Snow Image courtesy of Channel 4 News
+*'Know The News" by Mathias Menzl 
+*Kindly supported from GA Teachers Alex, Caroline and Oli
+*Jon Snow Image courtesy of Channel 4 News
+
+####Any ressources used were either created by hand or are free of right and duly credited.
+
