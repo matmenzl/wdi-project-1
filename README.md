@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="../readme.png" width="350"/>
+</p>
+
+
 # About
 
 'Know The News' is a trivia news game totally focused on numbers and statistics. Users opponent ist famous News Anchorman Jon Snow. He knows almost everything. Not to be mistaken with actor John Snow, who as everybody knows, knows nothing.  
