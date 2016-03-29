@@ -7,11 +7,13 @@
 
 'Know The News' was build as a first coding project during Web Development Immersive at General Assembly London.
 
-### Problem
-It is getting constantly harder to reach out to a young audience with news information if a news organization doesn't publish everything on Facebook. Furthermore, younger people would not only like to read the news but also engage. 
+### Problems
++ It is getting constantly harder to reach out to a young audience with news information if a news organization doesn't publish everything on Facebook. 
++ Younger people would not only like to read the news but also engage. 
++ News organisation still rely on users coming back to their website. News consumption nowadays works on push mechanism though and less on pull. So news organisations need to think about how people come back (Retention).
 
 ### Solution
-'Know The News' imparts news information in a gamified and engaging manner. 
+'Know The News' imparts news information in a gamified and engaging manner and offers the option to get notified when a new game is available (text push).
 
 ### How to play
 
