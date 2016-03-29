@@ -43,7 +43,7 @@ p {
   font-size: 32px;
   font-weight: medium;
   color:white;
-  padding: 40px;
+  padding: 10px 20px 10px 20px;
 }
 
 button a {
@@ -193,7 +193,11 @@ a {
 
 
 #text {
-  padding-top: 150px;
+  padding-top: 10px 20px 10px 20px;
+}
+
+#twitter {
+  padding:20px;
 }
 
 button {
@@ -284,11 +288,8 @@ input::-webkit-input-placeholder {
   height: 100%; 
 }
 
-/*
-@media only screen and (max-width: 640px) { if screen is higher than 640 these wont apply (style for 640 down)
+footer a {
+  color:white;
+  font-family: 'News Cycle', sans-serif;
 
-
-  header {
-    font-size: 30px;
-  }
-}*/
+}
