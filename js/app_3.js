@@ -39,6 +39,9 @@ var rounds = 0;
 
 function beginGame(){
   $('.start').show();
+  $('body').css('background', "url(images/john_snow_start_1200.png) no-repeat center center fixed");
+
+
 
   // Hide all other sections at the start
   $('.user').hide();
@@ -72,6 +75,8 @@ function initSlider() {
 }
 
 function playRound(){
+  $('body').css('background', 'none');
+
   $('.user').show();
 
   $('.start').hide();
