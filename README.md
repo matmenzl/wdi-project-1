@@ -7,6 +7,12 @@
 
 'Know The News' was build as a first coding project during Web Development Immersive at General Assembly London.
 
+### Problem
+It is getting constantly harder to reach out to a young audience with news information if a news organization doesn't publish everything on Facebook. Furthermore, younger people would not only like to read the news but also engage. 
+
+### Solution
+'Know The News' imparts news information in a gamified and engaging manner. 
+
 ### How to play
 
 You answer trivia questions and play against Jon Snow, who knows almost everyhting. Jon is very busy and has only a basic news set to play per day. The News you need to know about. If Jon has more News you get notified by text. 
