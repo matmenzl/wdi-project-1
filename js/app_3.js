@@ -78,7 +78,6 @@ function playRound(){
   $('body').css('background', 'none');
 
   $('.user').show();
-
   $('.start').hide();
   $('.jon').hide();
   $('.result').hide();
@@ -128,6 +127,7 @@ function bumper(e) {
 
   rounds++;
 
+  // abort game and go to result
   if (questions.length !== rounds) {
 
     userValue1   = undefined; // user's guess value
@@ -164,6 +164,3 @@ function emailSignup(){
   },1000);
 }
 
-function about() {
-  $('body').css('background', 'none');
-};
