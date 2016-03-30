@@ -10,7 +10,7 @@
 ### Problems
 + It is getting constantly harder to reach out to a young audience with news information if a news organization doesn't publish everything on Facebook. 
 + Younger people would not only like to read the news but also engage. 
-+ News organisation still rely on users coming back to their website. News consumption nowadays works on push mechanism though and less on pull. So news organisations need to think about how people come back (Retention).
++ News organisation still rely on users coming back to their website. News consumption nowadays works on push mechanism though and less on pull. So news organisations need to think about how people come back (Retention). Thats why users get asked to leave their mobile-number after the game. The number gets stored in a Google Spreadsheet.
 
 ### Solution
 'Know The News' imparts news information in a gamified and engaging manner and offers the option to get notified when a new game is available (text push).
