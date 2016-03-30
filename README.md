@@ -1,6 +1,8 @@
 
 ![alt text](images/readme.png "Know The News")
 
+[Link to Game:](https://quiet-ridge-88355.herokuapp.com/)
+
 # About
 
 'Know The News' is a mobile first trivia news game focused on numbers and statistics. Your opponent is famous News Anchorman Jon Snow. He knows almost everything. Not to be mistaken with actor Jon Snow, who, as everybody knows, knows nothing.  
